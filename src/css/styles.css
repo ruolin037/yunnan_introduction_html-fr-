@@ -1,0 +1,239 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	background-image: url("../images/011.jpg");
+}
+#conteneur { /* tout le site */
+	margin-left: auto; /* permet de centrer le conteneur, donc le site en entier */
+	margin-right: auto; /* permet de centrer le conteneur, donc le site en entier */
+	padding: 0px;
+	width: 960px;
+}
+
+#header1 { /* header personnalisé pour index.html */
+	margin: 0px;
+	padding: 0px;
+	background-image: url("../images/001.jpg");
+	background-size: cover;
+	height: 400px
+}
+
+#header2 { /* header personnalisé pour ours.html */
+	margin: 0px;
+	padding: 0px;
+	background-image: url("../images/003.jpg");
+	background-size: cover;
+	height: 400px
+}
+#header3 { /* header personnalisé pour ours.html */
+	margin: 0px;
+	padding: 0px;
+	background-image: url("../images/006.jpg");
+	background-size: cover;
+	height: 400px
+}
+#header4 { /* header personnalisé pour ours.html */
+	margin: 0px;
+	padding: 0px;
+	background-image: url("../images/007.jpg");
+	background-size: cover;
+	height: 400px
+}
+#header5 { /* header personnalisé pour ours.html */
+	margin: 0px;
+	padding: 0px;
+	background-image: url("../images/010.jpg");
+	background-size: cover;
+	height: 400px
+}
+#header6 { /* header personnalisé pour ours.html */
+	margin: 0px;
+	padding: 0px;
+	background-image: url("../images/012.jpg");
+	background-size: cover;
+	height: 400px
+}
+#header7 { /* header personnalisé pour ours.html */
+	margin: 0px;
+	padding: 0px;
+	background-image: url("../images/009.jpg");
+	background-size: cover;
+	height: 400px
+}
+#header8 { /* header personnalisé pour ours.html */
+	margin: 0px;
+	padding: 0px;
+	background-image: url("../images/013.jpg");
+	background-size: cover;
+	height: 400px
+}
+#header9 { /* header personnalisé pour ours.html */
+	margin: 0px;
+	padding: 0px;
+	background-image: url("../images/015.jpg");
+	background-size: cover;
+	height: 400px
+}
+h1 { /* définit le format des titres H1 */
+	margin: 0px;
+	padding-top: 0.3em;
+	padding-bottom: 0.3em;
+	font-size: 4em;
+}
+
+h2 { /* définit le format des titres H2 */
+	margin: 0px;
+	padding-top: 0.3em;
+	padding-bottom: 0.3em;
+	font-size: 2em;
+}
+
+#slogan { /* apparait dans le header */
+	color: white;
+	padding-left: 0.5em;
+	padding-top: 1em;
+	text-shadow: 2px 2px #42301a; /* crée une ombre sous le slogan pour le rendre visible sur fond clair */
+}
+
+/* ----- DÉBUT NAVIGATION PRINCIPALE ----- */
+#active {
+	background-image: url("../images/bg_nav_survol.jpg");
+}
+
+a {
+	text-decoration: none; /* enlève la ligne de soulignement présente par défaut sous les liens hypertextes */
+}
+
+nav ul {
+	background-image: url("../images/bg_nav+footer_bar.jpg");
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav ul li {
+	min-width: 8em;
+	color: #fff;
+	display: inline-block;
+	padding: 0.9em;
+	margin: 0;
+	position: relative;
+	text-decoration: none;
+	text-align: center;
+}
+
+li a {
+	color: #fff;
+}
+
+li:hover,
+li:focus-within {
+	background-image: url("../images/bg_nav_survol.jpg");
+	cursor: pointer;
+	min-width: 8em;
+}
+
+li:focus-within a {
+	outline: none;
+}
+
+ul li ul {
+	background-image: url("../images/bg_dropdown_menu.jpg");
+	visibility: hidden;
+	opacity: 0;
+	min-width: 8em;
+	position: absolute;
+	transition: all 0.5s ease;
+	margin-top: 0.9em;
+	left: 0;
+	display: none;
+}
+
+ul li:hover > ul,
+ul li:focus-within > ul,
+ul li ul:hover,
+ul li ul:focus {
+	visibility: visible;
+	opacity: 1;
+	display: block;
+}
+
+ul li ul li {
+	clear: both;
+	width: 125px;
+	text-align: left;
+}
+/* ----- FIN DE MISE EN FORME POUR LA NAVIGATION PRINCIPALE ----- */
+
+
+#milieu { /* section de contenu principal, peut être subdivisée */
+	padding: 30px;
+	background-color: #d1c4b4;
+	text-align: justify;
+}
+
+#milieuflex { /* section de contenu principal, utilise flexbox pour placer m1, m2 et m3 */
+	background-color: #d1c4b4;
+	height: 600px;
+	padding: 0px;
+	margin: 0px;
+	display: flex; /* active la propriété flexbox */
+    flex-direction: column; /* affiche à la verticale au lieu de horizontal par défaut */
+    flex-wrap: wrap; /* flexbox réduit la taille des éléments pour les faire entrer dans la section parent, WRAP permet la saut à la ligne et commence une 2eme colonne */
+}
+
+#m1 {
+    width: 440px;
+    height: 560px;
+    background-color: #d1c4b4;
+    padding: 20px;
+}
+
+#m2 {
+    width: 480px;
+    height: 300px;
+}
+
+#m3 {
+    width: 480px;
+    height: 300px;
+}
+
+#audio {
+	padding: 0px;
+}
+
+p {
+	margin-top: 0px;
+	text-align: justify;
+}
+
+#loup2 {
+	float: right;
+	margin-left: 45px;
+	margin-bottom: 20px;
+	width: 33%;
+}
+
+#loup3 {
+	float: right;
+	/*margin-left: 45px;
+	margin-bottom: 20px;*/
+	width: 33%;
+}
+
+#bgfootb {
+	background-color: coral;
+	height: 100px;
+}
+
+footer { /* présent en pied de page, identique sur toutes les pages */
+	background-image: url("../images/bg_nav+footer_bar.jpg");
+	width:940px;
+	/*height: 20px;*/
+	padding: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	color: white;
+}
